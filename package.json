@@ -1,0 +1,12 @@
+{
+  "name": "my-dev-brain",
+  "version": "0.0.1",
+  "description": "A user story management tool for my projects :D",
+  "main": "index.js",
+  "scripts": {
+    "run:api": "python myDevBrainApi/manage.py runserver",
+    "test:api": "python myDevBrainApi/manage.py test"
+  },
+  "author": "runfaster",
+  "license": "MIT"
+}
