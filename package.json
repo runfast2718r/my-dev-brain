@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "run:api": "python myDevBrainApi/manage.py runserver",
-    "test:api": "python myDevBrainApi/manage.py test"
+    "test:api": "python myDevBrainApi/manage.py test",
+    "lint:python": "autopep8 .\\myDevBrainApi -r --in-place --exclude=\"*/migrations/*\""
   },
   "author": "runfaster",
   "license": "MIT"

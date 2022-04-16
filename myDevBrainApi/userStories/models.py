@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Status(models.Model):
     IDEATED = 'ID'
     PLANNED = 'P'
@@ -22,7 +23,7 @@ class Status(models.Model):
     )
 
     def is_completed(self):
-        return self.status in { self.DONE }
+        return self.status in {self.DONE}
 
 
 class UserStory(models.Model):
@@ -31,6 +32,7 @@ class UserStory(models.Model):
     status = models.ForeignKey(Status, on_delete=models.CASCADE)
     parent_feature = models.CharField(max_length=50)
     git_branch = models.CharField(max_length=50)
+
 
 class Comment(models.Model):
     comment_text = models.CharField(max_length=1000)
