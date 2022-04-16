@@ -1,0 +1,7 @@
+<h1>You are viewing User Story #{{ user_story.id }}</h1>
+
+<p><b>AKA: </b> {{ user_story.short_name }}</p>
+<p><b>The user story is:</b> {{ user_story.full_name }}</p>
+<p><b>It is in</b> {{ user_story.get_status_display }} status</p>
+<p><b>It's parent feature is</b> {{ user_story.parent_feature }}</p>
+<p><b>It's git branch is</b> {{ user_story.git_branch }}</p>

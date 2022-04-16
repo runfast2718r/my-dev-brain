@@ -4,7 +4,9 @@
   "description": "A user story management tool for my projects :D",
   "main": "index.js",
   "scripts": {
-    "run:api": "python myDevBrainApi/manage.py runserver",
+    "api": "python myDevBrainApi/manage.py runserver",
+    "api:migrate": "python myDevBrainApi/manage.py migrate",
+    "api:makemigrate": "python myDevBrainApi/manage.py makemigrations",
     "test:api": "python myDevBrainApi/manage.py test",
     "lint:python": "autopep8 .\\myDevBrainApi -r --in-place --exclude=\"*/migrations/*\""
   },
