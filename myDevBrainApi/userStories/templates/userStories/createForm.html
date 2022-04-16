@@ -1,0 +1,12 @@
+<form action="{% url 'createStory' %}" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend><h1>Create User Story</h1></legend>
+        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+        {% for field in form_field_set %}
+            <input type="text" name="{{ field.field }}" id="{{ field.field }}">
+            <label for="{{ field.field }}">{{ field.display }}</label><br>
+        {% endfor %}
+    </fieldset>
+    <input type="submit" value="Create">
+</form>
