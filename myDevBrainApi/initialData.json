@@ -1,0 +1,52 @@
+[
+    {
+      "model": "userStories.Status",
+      "pk": 1,
+      "fields": {
+        "display": "Ideated",
+        "text_identifier": "ID",
+        "next_status": "P",
+        "prev_status": ""
+      }
+    },
+    {
+        "model": "userStories.Status",
+        "pk": 2,
+        "fields": {
+          "display": "Planned",
+          "text_identifier": "P",
+          "next_status": "IP",
+          "prev_status": "ID"
+        }
+    },
+    {
+        "model": "userStories.Status",
+        "pk": 3,
+        "fields": {
+          "display": "In Progress",
+          "text_identifier": "IP",
+          "next_status": "IT",
+          "prev_status": "P"
+        }
+      },
+      {
+        "model": "userStories.Status",
+        "pk": 4,
+        "fields": {
+          "display": "In Test",
+          "text_identifier": "IT",
+          "next_status": "IP",
+          "prev_status": "D"
+        }
+      },
+      {
+        "model": "userStories.Status",
+        "pk": 5,
+        "fields": {
+          "display": "Done",
+          "text_identifier": "D",
+          "next_status": "IT",
+          "prev_status": ""
+        }
+      }
+  ]

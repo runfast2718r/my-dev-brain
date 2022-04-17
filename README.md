@@ -1,5 +1,8 @@
 # my-dev-brain
 
+## Loading initial status data:
+To load and customize initial status data, run `npm run api:loaddata` and update the myDevBrainAPI/initialData.json file.
+
 ## User stories (Because I don't have a place for those yet)
 * ~~I want the basic setup of the application done~~
 * ~~I want to create a user story~~

@@ -7,6 +7,7 @@
     "api": "python myDevBrainApi/manage.py runserver",
     "api:migrate": "python myDevBrainApi/manage.py migrate",
     "api:makemigrate": "python myDevBrainApi/manage.py makemigrations",
+    "api:loaddata": "python myDevBrainApi/manage.py loaddata myDevBrainApi/initialData.json",
     "test:api": "python myDevBrainApi/manage.py test",
     "lint:python": "autopep8 .\\myDevBrainApi -r --in-place --exclude=\"*/migrations/*\""
   },
